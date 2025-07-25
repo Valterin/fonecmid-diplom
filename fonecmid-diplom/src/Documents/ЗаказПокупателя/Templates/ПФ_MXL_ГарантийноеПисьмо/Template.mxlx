@@ -10,7 +10,7 @@
 		</languageInfo>
 	</languageSettings>
 	<columns>
-		<size>12</size>
+		<size>14</size>
 		<columnsItem>
 			<index>0</index>
 			<column>
@@ -460,8 +460,8 @@
 	</drawing>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>12</defaultFormatIndex>
-	<height>28</height>
-	<vgRows>28</vgRows>
+	<height>34</height>
+	<vgRows>34</vgRows>
 	<merge>
 		<r>3</r>
 		<c>7</c>

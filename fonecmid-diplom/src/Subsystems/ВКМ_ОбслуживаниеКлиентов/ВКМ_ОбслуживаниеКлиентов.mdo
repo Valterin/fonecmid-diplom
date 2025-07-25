@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a305f8d-1cdd-4a92-a7ba-4ea8ec1994f8">
+  <name>ВКМ_ОбслуживаниеКлиентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обслуживание клиентов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ВКМ_Пользователь</picture>
+  </picture>
+  <content>Document.ВКМ_ОбслуживаниеКлиента</content>
+  <content>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
+  <content>EventSubscription.ВКМ_ОпределитьФормуПрисоединенногоФайла</content>
+  <content>DefinedType.ВладелецПрисоединенныхФайлов</content>
+  <content>DefinedType.ПрисоединенныйФайл</content>
+  <content>DefinedType.ПрисоединенныйФайлОбъект</content>
+  <content>Role.ВКМ_РаботаСЗаявкамиКлиентов</content>
+  <content>AccumulationRegister.ВКМ_ВыполненыеКлиентуРаботы</content>
+  <content>Constant.ВКМ_ТокенУправленияТелеграмБотом</content>
+  <content>Constant.ВКМ_ИдентификаторГруппыДляОповещения</content>
+  <content>Catalog.ВКМ_УведомленияТелеграмБоту</content>
+  <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
+  <content>CommonModule.ВКМ_Телеграм</content>
+  <content>Catalog.ДоговорыКонтрагентов</content>
+  <content>Enum.ВидыДоговоровКонтрагентов</content>
+  <content>CommonPicture.ВКМ_Пользователь</content>
+  <content>Document.РеализацияТоваровУслуг</content>
+  <content>Constant.ВКМ_НоменклатураАбонентскаяПлата</content>
+  <content>Constant.ВКМ_НоменклатураРаботыСпециалиста</content>
+  <content>ScheduledJob.ВКМ_ОтправкаСообщенийПоРасписанию</content>
+  <content>CommonModule.УправлениеДоступомПереопределяемый</content>
+  <content>CommonModule.УправлениеДоступомИТ</content>
+  <content>DataProcessor.ВКМ_КалендарьСпециалистов</content>
+  <content>Catalog.ВКМ_Сотрудники</content>
+  <content>Enum.ВКМ_КатегорииСотрудников</content>
+  <content>Role.ВКМ_РаботаСФайлами</content>
+  <content>Role.ВКМ_МассовоеСозданиеДокументовРеализации</content>
+  <content>Report.ВКМ_ВыработкаСпециалистов</content>
+  <content>Report.ВКМ_АнализВыставленныхАктов</content>
+  <content>Role.ВКМ_РаботаСКалендаремСпециалистов</content>
+  <content>Role.ВКМ_РаботаСОтчетомВыработкаСпециалистов</content>
+</mdclass:Subsystem>
