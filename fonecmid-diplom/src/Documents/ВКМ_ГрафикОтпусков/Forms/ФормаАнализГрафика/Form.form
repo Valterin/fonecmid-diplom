@@ -2,7 +2,7 @@
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormField">
     <name>ДиаграммаГанта</name>
-    <id>10</id>
+    <id>1</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -13,7 +13,7 @@
     </dataPath>
     <extendedTooltip>
       <name>ДиаграммаГантаРасширеннаяПодсказка</name>
-      <id>12</id>
+      <id>3</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -23,7 +23,7 @@
     </extendedTooltip>
     <contextMenu>
       <name>ДиаграммаГантаКонтекстноеМеню</name>
-      <id>11</id>
+      <id>2</id>
       <autoFill>true</autoFill>
     </contextMenu>
     <type>GanttChartField</type>
@@ -34,7 +34,7 @@
     <extInfo xsi:type="form:GanttChartFieldExtInfo">
       <autoTable>
         <name>ДиаграммаГантаТаблица</name>
-        <id>13</id>
+        <id>4</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -44,6 +44,10 @@
         <items xsi:type="form:FormField">
           <name>ДиаграммаГантаТаблицаТочка</name>
           <id>26</id>
+          <title>
+            <key>ru</key>
+            <value>Сотрудник</value>
+          </title>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -85,7 +89,6 @@
         <items xsi:type="form:FormField">
           <name>ДиаграммаГантаТаблицаТекст</name>
           <id>29</id>
-          <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
@@ -125,16 +128,16 @@
         </items>
         <autoCommandBar>
           <name>ДиаграммаГантаТаблицаКоманднаяПанель</name>
-          <id>15</id>
+          <id>6</id>
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
         <searchStringAddition>
           <name>ДиаграммаГантаТаблицаСтрокаПоиска</name>
-          <id>17</id>
+          <id>8</id>
           <extendedTooltip>
             <name>ДиаграммаГантаТаблицаСтрокаПоискаРасширеннаяПодсказка</name>
-            <id>19</id>
+            <id>10</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -144,7 +147,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ДиаграммаГантаТаблицаСтрокаПоискаКонтекстноеМеню</name>
-            <id>18</id>
+            <id>9</id>
             <autoFill>true</autoFill>
           </contextMenu>
           <source>ДиаграммаГантаТаблица</source>
@@ -154,10 +157,10 @@
         </searchStringAddition>
         <viewStatusAddition>
           <name>ДиаграммаГантаТаблицаСостояниеПросмотра</name>
-          <id>20</id>
+          <id>11</id>
           <extendedTooltip>
             <name>ДиаграммаГантаТаблицаСостояниеПросмотраРасширеннаяПодсказка</name>
-            <id>22</id>
+            <id>13</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -167,7 +170,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ДиаграммаГантаТаблицаСостояниеПросмотраКонтекстноеМеню</name>
-            <id>21</id>
+            <id>12</id>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
@@ -178,10 +181,10 @@
         </viewStatusAddition>
         <searchControlAddition>
           <name>ДиаграммаГантаТаблицаУправлениеПоиском</name>
-          <id>23</id>
+          <id>14</id>
           <extendedTooltip>
             <name>ДиаграммаГантаТаблицаУправлениеПоискомРасширеннаяПодсказка</name>
-            <id>25</id>
+            <id>16</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -191,7 +194,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ДиаграммаГантаТаблицаУправлениеПоискомКонтекстноеМеню</name>
-            <id>24</id>
+            <id>15</id>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
@@ -202,7 +205,7 @@
         </searchControlAddition>
         <extendedTooltip>
           <name>ДиаграммаГантаТаблицаРасширеннаяПодсказка</name>
-          <id>16</id>
+          <id>7</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -212,7 +215,7 @@
         </extendedTooltip>
         <contextMenu>
           <name>ДиаграммаГантаТаблицаКонтекстноеМеню</name>
-          <id>14</id>
+          <id>5</id>
           <autoFill>true</autoFill>
         </contextMenu>
         <representation>Tree</representation>
@@ -267,30 +270,12 @@
   <showTitle>true</showTitle>
   <showCloseButton>true</showCloseButton>
   <attributes>
-    <name>Объект</name>
-    <id>1</id>
-    <valueType>
-      <types>DocumentObject.ВКМ_ГрафикОтпусков</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
-      <segments>Объект.RegisterRecords</segments>
-    </notDefaultUseAlwaysAttributes>
-    <main>true</main>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
     <name>ДиаграммаГанта</name>
     <title>
       <key>ru</key>
       <value>Диаграмма ганта</value>
     </title>
-    <id>2</id>
+    <id>1</id>
     <valueType>
       <types>GanttChart</types>
     </valueType>
@@ -306,7 +291,4 @@
     <navigationPanel/>
     <commandBar/>
   </commandInterface>
-  <extInfo xsi:type="form:DocumentFormExtInfo">
-    <repostOnWrite>true</repostOnWrite>
-  </extInfo>
 </form:Form>

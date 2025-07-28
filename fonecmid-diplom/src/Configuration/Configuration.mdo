@@ -634,6 +634,7 @@
   <roles>Role.ВКМ_РаботаСКалендаремСпециалистов</roles>
   <roles>Role.ВКМ_ПодсистемаРасчетУправленческойЗарплаты</roles>
   <roles>Role.ВКМ_РаботаСОтчетомВыработкаСпециалистов</roles>
+  <roles>Role.ВКМ_РаботаСЗаявкамиКлиентовМенеджер</roles>
   <commonTemplates>CommonTemplate.ДанныеПечатиОбщиеРеквизиты</commonTemplates>
   <commonTemplates>CommonTemplate.ДанныеПечатиРегистрСимволов</commonTemplates>
   <commonTemplates>CommonTemplate.ИнструкцияКакВыполнитьНастройкуМакетаOfficeOpen</commonTemplates>

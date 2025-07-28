@@ -43,7 +43,7 @@
 	ВКМ_ОтпускаСотрудниковОбороты.КоличествоДнейПриход КАК План,
 	ВКМ_ОтпускаСотрудниковОбороты.КоличествоДнейРасход КАК Факт
 ИЗ
-	РегистрНакопления.ВКМ_ОтпускаСотрудников.Обороты(, , , Год = &amp;Год) КАК ВКМ_ОтпускаСотрудниковОбороты</query>
+	РегистрНакопления.ВКМ_ОтпускаСотрудников.Обороты(, , , {(Год = &amp;Год)}) КАК ВКМ_ОтпускаСотрудниковОбороты</query>
 	</dataSet>
 	<parameter>
 		<name>Год</name>
@@ -61,6 +61,7 @@
 		</valueType>
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>false</useRestriction>
+		<use>Always</use>
 	</parameter>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -149,7 +150,10 @@
 		</template>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>Год</dcsat:name>
-			<dcsat:expression>ПараметрыДанных.Год</dcsat:expression>
+			<dcsat:expression>Выбор когда ПараметрыДанных.Год = ДатаВремя(1,1,1) Тогда
+Год(ТекущаяДата())
+Иначе ПараметрыДанных.Год 
+Конец</dcsat:expression>
 		</parameter>
 	</template>
 	<groupTemplate>
@@ -159,7 +163,12 @@
 	</groupTemplate>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
-		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Расход запланированных отпусков</v8:content>
+			</v8:item>
+		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -175,7 +184,9 @@
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>Год</dcscor:parameter>
-					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
 					<dcsset:userSettingID>19a7dc12-9067-4d45-a716-02a53a626448</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
